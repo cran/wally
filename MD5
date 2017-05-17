@@ -1,0 +1,16 @@
+e7db1c1f1fa36099c99d90c1d9411539 *DESCRIPTION
+0df84e1431c500d9336a923b026a40a9 *NAMESPACE
+228a46c3566cfd851cf30c0b61dd9b24 *R/AJ-constrained-bootstrap.R
+30da71b64b1aefa507073d0596bea057 *R/AJ-constrained.R
+00e1ffb2cbafe1c4e0e5b343385db732 *R/KM-constrained-bootstrap.R
+56050bce24bc4a7c2fc25eba3e983dfa *R/KM-constrained.R
+97d441658bc9ea2805b1e1045b243867 *R/calibrationBarplot.R
+4c84d37cef13fc8cdf77d688be1a7584 *R/wally-package.R
+ea7d86ad2da96a4febe4a4c68aabcbbe *R/wallyPlot.R
+48e0504ed1ffcb5580e623111dba2e5f *data/divat.csv.gz
+98a9097b6888c7d81fa8acd7392f07a9 *data/threecity.csv.gz
+2b878c1fc2bfeec19aee123ae7333f80 *man/divat.Rd
+01ebbb2492d6cd66d459c9b763d4d06c *man/threecity.Rd
+286de315a6c6b6d3322f9671b42f0b0a *man/wallyPlot.Rd
+d828c367e32b012a69368a2ba509eb61 *tests/Reproduce-Fig-paper.R
+860cdfa8c6696c142a813724b84ce4ef *tests/test-wally-function.R
