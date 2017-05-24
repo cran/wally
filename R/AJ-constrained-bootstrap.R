@@ -20,7 +20,7 @@ GenCRDataAJCons <- function (tstar, pstar, M = 1000, data, myseed=140786)
     Surv <- 1 - x$CIF1c - x$CIF2c
     Survminus <- c(1,Surv[-length(Surv)])
     dSurv <- -diff(c(1, Surv))
-    dSurv <- c(dSurv, 1 - sum(dSurv))
+    dSurv <- abs(c(dSurv, 1 - sum(dSurv))) # absolute to avoid problems without long doubles
     diffcumInc1 <- diff(c(0,x$CIF1c))
     diffcumInc2 <- diff(c(0,x$CIF2c))   
     lambda1 <- diffcumInc1/Survminus
@@ -39,7 +39,7 @@ GenCRDataAJCons <- function (tstar, pstar, M = 1000, data, myseed=140786)
         survCens <- predict(fitcens,times=censTimes,type="surv")
         censTimes <- c(censTimes, max(data$time) + 1)
         dCens <- -diff(c(1, survCens))
-        dCens <- c(dCens, 1 - sum(dCens))
+        dCens <- abs(c(dCens, 1 - sum(dCens))) # absolute to avoid problems without long doubles
     }
     # }}}
     # {{{ function to generate new data    

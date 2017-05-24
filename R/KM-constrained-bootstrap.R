@@ -19,7 +19,7 @@ GenSurvDataKMCons <- function (tstar, pstar, M = 1000, data, myseed=140786) {
     x <- KMconstrained(tstar, pstar,  data)
     survTimes <- c(x$time, Inf)
     dSurv <- -diff(c(1, x$Sc))
-    dSurv <- c(dSurv, 1 - sum(dSurv))
+    dSurv <- abs(c(dSurv, 1 - sum(dSurv))) # absolute to avoid problems without long doubles
     # }}}
     # {{{ to generate censoring
     # fit KM for censoring
@@ -31,7 +31,7 @@ GenSurvDataKMCons <- function (tstar, pstar, M = 1000, data, myseed=140786) {
         survCens <- predict(fitcens,times=censTimes,type="surv")
         censTimes <- c(censTimes, max(data$time) + 1)
         dCens <- -diff(c(1, survCens))
-        dCens <- c(dCens, 1 - sum(dCens))
+        dCens <- abs(c(dCens, 1 - sum(dCens))) # absolute to avoid problems without long doubles
     }
     # }}}
     # {{{ function to generate new data    

@@ -1,8 +1,8 @@
-e7db1c1f1fa36099c99d90c1d9411539 *DESCRIPTION
+c01bb2393eb2472892320d77bdda5272 *DESCRIPTION
 0df84e1431c500d9336a923b026a40a9 *NAMESPACE
-228a46c3566cfd851cf30c0b61dd9b24 *R/AJ-constrained-bootstrap.R
+223b13342499cdbf370bdb1873e1a18c *R/AJ-constrained-bootstrap.R
 30da71b64b1aefa507073d0596bea057 *R/AJ-constrained.R
-00e1ffb2cbafe1c4e0e5b343385db732 *R/KM-constrained-bootstrap.R
+dbdbeb27fc3a96ae0173b0268d3bf597 *R/KM-constrained-bootstrap.R
 56050bce24bc4a7c2fc25eba3e983dfa *R/KM-constrained.R
 97d441658bc9ea2805b1e1045b243867 *R/calibrationBarplot.R
 4c84d37cef13fc8cdf77d688be1a7584 *R/wally-package.R
