@@ -44,6 +44,7 @@
 ##'
 ##' # Survival setting
 ##' library(prodlim)
+##' library(data.table)
 ##' library(survival)
 ##' set.seed(180)
 ##' d = SimSurv(180)
@@ -306,6 +307,7 @@ wallyPlot <- function(object,
     DataList <- lapply(1:8,function(i){do.call("rbind", sapply(lapply(ListofListsPerGroups,"[",i),"[",1))})
     ## add real data at the last position
     realData <- cbind(data[,all.vars(update(formula,".~1")),drop=FALSE],riskGroups=riskGroups)
+    data.table::setDT(realData)
     DataList <- c(DataList,list(realData))
     # }}}  
     # {{{ sample the order of the data in the list

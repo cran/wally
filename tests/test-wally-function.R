@@ -1,6 +1,7 @@
 
 # {{{ load packages
 library(survival)
+library(data.table)
 library(testthat)
 library(prodlim)
 library(riskRegression)
@@ -17,12 +18,16 @@ test_that("Wally for survival weird formula and hanging",{
     d$pi <- predictRisk(f,times=2,newdata=d)
     pred <- as.matrix(d$pi,ncol=1)
     ## matrix input
-    u <- wallyPlot(pred,time=2,
+    u <- wallyPlot(pred,
+                   time=2,
                    formula=as.formula(paste("Hist(","truc",",","toto",")~1")),
-                   data=d,hanging=TRUE,seed=5987,
+                   data=d,
+                   hanging=TRUE,
+                   seed=5987,
                    colbox="red",
                    superuser.hide=FALSE,
-                   superuser.choice=NULL,q=13)
+                   superuser.choice=NULL,
+                   q=13)
     ## model input
     v <- wallyPlot(f,
                    time=2,

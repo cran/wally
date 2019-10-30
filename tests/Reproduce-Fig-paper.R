@@ -1,6 +1,7 @@
 
 # {{{ load packages
 library(survival)
+library(data.table)
 library(prodlim)
 library(riskRegression)
 library(wally)

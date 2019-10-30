@@ -1,8 +1,7 @@
 Package: wally
 Type: Package
 Title: The Wally Calibration Plot for Risk Prediction Models
-Version: 1.0.9
-Date: 2017-04-28
+Version: 1.0.10
 Author: Paul F Blanche <paulfblanche@gmail.com>, Thomas A. Gerds
     <tag@biostat.ku.dk>
 Maintainer: Paul F. Blanche <paulfblanche@gmail.com>
@@ -11,8 +10,8 @@ Depends: R (>= 2.9.0), prodlim (>= 1.4.9)
 Imports: stats, riskRegression (>= 1.0.8), data.table (>= 1.10.4)
 Suggests: testthat, survival
 License: GPL (>= 2)
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2017-05-24 13:30:35 UTC; paul
+Packaged: 2019-10-29 18:26:05 UTC; tag
 Repository: CRAN
-Date/Publication: 2017-05-24 23:23:16 UTC
+Date/Publication: 2019-10-30 14:40:02 UTC
